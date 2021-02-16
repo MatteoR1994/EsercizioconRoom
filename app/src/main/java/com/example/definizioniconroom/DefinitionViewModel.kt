@@ -22,15 +22,12 @@ class DefinitionViewModel(application: Application) : AndroidViewModel(applicati
     }
 
     companion object {
-
         private class InsertAsyncTask(private val definitionDao: DefinitionDao) :
             AsyncTask<Definition, Void, Void>() {
             override fun doInBackground(vararg params: Definition): Void? {
                 definitionDao.add(params[0])
-                    return null
+                return null
             }
         }
     }
-
-
 }

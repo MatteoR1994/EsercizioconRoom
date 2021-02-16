@@ -15,21 +15,15 @@ abstract class DefinitionDatabase : RoomDatabase() {
 
         fun getDatabase(context: Context): DefinitionDatabase? {
             if (definitionRoomIstance == null) {
-
                 synchronized(DefinitionDatabase::class.java) {
                     if (definitionRoomIstance == null) {
                         definitionRoomIstance = Room.databaseBuilder(context.applicationContext,
                                 DefinitionDatabase::class.java, "definition_database")
                                 .build()
                     }
-
                 }
             }
             return definitionRoomIstance
-
         }
-
     }
-
-
 }

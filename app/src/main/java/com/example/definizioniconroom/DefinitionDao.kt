@@ -12,5 +12,4 @@ interface DefinitionDao {
 
     @get:Query("SELECT * FROM   definizioni")
     val allDefinition:LiveData<List<Definition>>
-
 }

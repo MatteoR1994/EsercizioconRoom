@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Definizioni con Room</string>
+    <string name="new_def_btn_string">NUOVA</string>
+    <string name="add_def_btn_string">AGGIUNGI</string>
+    <string name="new_word_input_hint_string">Inserisci la parola</string>
+    <string name="new_description_input_hint_string">Inserisci la sua definizione</string>
 </resources>
